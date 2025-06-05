@@ -1,39 +1,60 @@
-<h1 style="text-align:center">🎯 Action Ring</h1>
+
+# ActionRing - Linux
+
+Action Ring is a “Quick Action Ring” that opens around the mouse cursor.  
+It gives you instant access to your favorite apps, saves time and is a pleasure to look at.
 
 <p align="center">
-  GTK4 & libadwaita tabanlı, hızlı erişim ve komut çalıştırma uygulaması.<br>
-  Webcord ve Zapzap ile uyumlu.<br>
+  <img src="https://github.com/anlyetim/ActionRing/blob/main/ActionRing.gif" width="300" height="300" />
 </p>
 
----
 
-<h2 style="text-align:center">🚀 Özellikler</h2>
+## ✨ Features
 
-- Kişiselleştirilebilir tuş ve komut yönetimi  
-- Webcord ve Zapzap ile entegre çalışma  
-- Flatpak ile kolay kurulum ve güncelleme  
-- Hafif ve hızlı performans  
+- Application ring design
+- Quick access with shortcuts
+- Customizable structure (icons and apps)
+- Written in Python
 
----
-
-<h2 style="text-align:center">🛠️ Gereksinimler</h2>
-
-- Python 3  
-- PyGObject (Python GTK bindings)  
-- GTK 4 ve libadwaita (sistem kütüphaneleri)  
-- <b>Webcord ve Zapzap uygulamalarının Flatpak ile kurulumu (zorunlu)</b>  
 
 <p align="center">
-  <i>Not:</i> Bu sürümü kullanmak için <b>Webcord</b> ve <b>Zapzap</b>'ın Flatpak versiyonlarının sisteminizde kurulu olması gerekmektedir.
+<img src="https://github.com/anlyetim/ActionRing/blob/main/ActionRing_Settings.png" width="300" height="300" />
 </p>
 
----
+## 📦 Requirements
 
-<h2 style="text-align:center">📦 Kurulum</h2>
+The following packages must be installed for this application to work:
 
-### Sistem paketleri ve Python bağımlılıkları:
+
+*for Debian based:*
+```bash
+sudo apt install python3 python3-gi gir1.2-gtk-3.0
+```
+
+*for Arch based:*
+```bash
+sudo pacman -Syu python python-pip gtk3
+```
+
+**Note:** This version of the application also uses Webcord and Zapzap via Flatpak. If you want to add different shortcuts or delete existing shortcuts, you can make changes via `settings.json`.
+
+Or you can install Zapzap and Webcord via Flathub if you don't have these apps.**(Flatpak must be installed)**
+
+*for Webcord:*
+```bash
+flatpak install flathub io.github.spacingbat3.webcord
+```
+*for Zapzap:*
+```bash
+flatpak install flathub com.rtosta.zapzap
+```
+## 🚀 Installation
 
 ```bash
-sudo apt update
-sudo apt install python3 python3-gi python3-gi-cairo gir1.2-gtk-4.0 gir1.2-adw-1
-pip install -r requirements.txt
+git clone https://github.com/anlyetim/ActionRing.git
+cd ActionRing
+python3 action_ring.py
+```
+
+> [!IMPORTANT] 
+> This application was only tested on an Arch-based Hyprland desktop. I have no idea how it will work on KDE, Gnome, etc.
