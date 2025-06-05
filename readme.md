@@ -63,3 +63,22 @@ python3 action_ring.py
 
 > [!IMPORTANT] 
 > This application was only tested on an Arch-based Hyprland desktop. I have no idea how it will work on KDE, Gnome, etc.
+#
+
+> [!TIP]
+> If you want to use this application on Hyprland like me, you can bind the executable in your `hyprland.conf` file by adding a line like this:
+```bash
+bind = MOD, <key>, exec, /full/path/to/actionring
+```
+Save the config and reload Hyprland to apply the changes.
+
+#
+
+Alternatively, if you'd like to run the executable file actionring, make sure it's marked as executable first:
+```bash
+chmod +x /home/(your_username)/ActionRing/actionring
+```
+Here’s the exact keybind I personally use:
+```bash
+bind = SUPER, F2, exec, /home/(your_username)/ActionRing/actionring
+```
