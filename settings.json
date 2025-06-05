@@ -1,0 +1,82 @@
+{
+    "buttons": [
+        {
+            "name": "PlayPause",
+            "command": [
+                "playerctl",
+                "play-pause"
+            ],
+            "icon": "play_pause.png",
+            "enabled": true
+        },
+        {
+            "name": "Next",
+            "command": [
+                "playerctl",
+                "next"
+            ],
+            "icon": "next.png",
+            "enabled": true
+        },
+        {
+            "name": "Previous",
+            "command": [
+                "playerctl",
+                "previous"
+            ],
+            "icon": "previous.png",
+            "enabled": true
+        },
+        {
+            "name": "Mute",
+            "command": [
+                "pactl",
+                "set-sink-mute",
+                "@DEFAULT_SINK@",
+                "toggle"
+            ],
+            "icon": null,
+            "enabled": true
+        },
+        {
+            "name": "Zapzap",
+            "command": [
+                "flatpak",
+                "run",
+                "com.rtosta.zapzap"
+            ],
+            "icon": "zapzap.png",
+            "enabled": true
+        },
+        {
+            "name": "Webcord",
+            "command": [
+                "flatpak",
+                "run",
+                "io.github.spacingbat3.webcord"
+            ],
+            "icon": "webcord.png",
+            "enabled": true
+        },
+        {
+            "name": "Brave",
+            "command": [
+                "flatpak",
+                "run",
+                "com.brave.Browser"
+            ],
+            "icon": "brave.png",
+            "enabled": true
+        },
+        {
+            "name": "Spotify",
+            "command": [
+                "/usr/bin/spotify"
+            ],
+            "icon": "spotify.png",
+            "enabled": true
+        }
+    ],
+    "layout": "ring",
+    "theme": "light"
+}
