@@ -21,6 +21,9 @@ It gives you instant access to your favorite apps, saves time and is a pleasure 
 - Customizable structure (icons and apps)
 - Written in Python
 
+>[!NOTE]
+>You can open the settings quickly by pressing the **S** key while the Action Ring is active.
+
 
 <p align="center">
 <img src="https://github.com/anlyetim/ActionRing/blob/main/ActionRing_Settings.png" width="300" height="300" />
