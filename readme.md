@@ -1,6 +1,11 @@
 
 # ActionRing - Linux
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Linux-turquoise">
+  <img src="https://img.shields.io/badge/Language-Python-blue">
+</p>
+
 Action Ring is a “Quick Action Ring” that opens around the mouse cursor.  
 It gives you instant access to your favorite apps, saves time and is a pleasure to look at.
 
