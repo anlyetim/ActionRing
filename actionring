@@ -76,7 +76,7 @@ class ActionRing(Adw.Application):
         css_provider = Gtk.CssProvider()
         css_provider.load_from_data(b"""
         button {
-            background-color: white;
+            background-color: black;
             border-radius: 30px;
             font-size: 20px;
             color: white;
