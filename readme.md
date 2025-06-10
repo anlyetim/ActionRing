@@ -36,12 +36,19 @@ The following packages must be installed for this application to work:
 
 *for Debian based:*
 ```bash
-sudo apt install python3 python3-gi gir1.2-gtk-3.0
+sudo apt install -y \
+  python3 python3-gi python3-gi-cairo \
+  gir1.2-gtk-3.0 gir1.2-gtk-4.0 gir1.2-adw-1 \
+  libgtk-4-dev libadwaita-1-dev
 ```
 
 *for Arch based:*
 ```bash
-sudo pacman -Syu python python-pip gtk3
+sudo pacman -Syu
+sudo pacman -S \
+  python python-pip python-gobject \
+  gtk3 gtk4 libadwaita
+
 ```
 
 **Note:** This version of the application also uses Webcord and Zapzap via Flatpak. If you want to add different shortcuts or delete existing shortcuts, you can make changes via `settings.json`.
