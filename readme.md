@@ -39,7 +39,8 @@ The following packages must be installed for this application to work:
 sudo apt install -y \
   python3 python3-gi python3-gi-cairo \
   gir1.2-gtk-3.0 gir1.2-gtk-4.0 gir1.2-adw-1 \
-  libgtk-4-dev libadwaita-1-dev
+  libgtk-4-dev libadwaita-1-dev pulseaudio-utils playerctl
+
 ```
 
 *for Arch based:*
@@ -47,14 +48,18 @@ sudo apt install -y \
 sudo pacman -Syu
 sudo pacman -S \
   python python-pip python-gobject \
-  gtk3 gtk4 libadwaita
+  gtk3 gtk4 libadwaita pulseaudio playerctl
 
 ```
 
-**Note:** This version of the application also uses Webcord and Zapzap via Flatpak. If you want to add different shortcuts or delete existing shortcuts, you can make changes via `settings.json`.
+**Note:** This version of the application also uses Brave, Webcord and Zapzap via Flatpak. If you want to add different shortcuts or delete existing shortcuts, you can make changes via `settings.json`.
 
-Or you can install Zapzap and Webcord via Flathub if you don't have these apps.**(Flatpak must be installed)**
+Or you can install Brave, Zapzap and Webcord via Flathub if you don't have these apps.**(Flatpak must be installed)**
 
+*for Brave:*
+```bash
+flatpak install flathub com.brave.Browser
+```
 *for Webcord:*
 ```bash
 flatpak install flathub io.github.spacingbat3.webcord
